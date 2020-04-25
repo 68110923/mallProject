@@ -12,6 +12,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1b1muHHJh5YaXzk3GqzC730rUyc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -21,6 +22,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -80,13 +82,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="575" y="115" key="CommitChangelistDialog2" timestamp="1587808312074">
+    <state x="575" y="115" key="CommitChangelistDialog2" timestamp="1587808459246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="575" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587808312074" />
+    <state x="575" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587808459246" />
     <state x="769" y="416" key="Github.CreateGistDialog" timestamp="1587808252974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="416" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587808252974" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587808486098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587808486098" />
   </component>
 </project>
