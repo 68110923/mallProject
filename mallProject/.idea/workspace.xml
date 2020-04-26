@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c362a454-1a12-40f7-8761-2894b829d910" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontEnd/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontEnd/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontEnd/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontEnd/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontEnd/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontEnd/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontEnd/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontEnd/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/table/addressee.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/table/commodity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/table/commodity_comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/table/commodity_img_describe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/table/commodity_img_details.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/table/order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/table/shoppingcar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/table/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mallProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mallProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mallProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mallProject/urls.py" afterDir="false" />
     </list>
@@ -19,6 +23,28 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,10 +73,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../django_blog/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bj/hq" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -93,7 +120,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587808194690</updated>
-      <workItem from="1587808196362" duration="10198000" />
+      <workItem from="1587808196362" duration="11073000" />
+      <workItem from="1587898783696" duration="17656000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1587808313026</created>
@@ -137,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587809568293</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="功能框架搭建完毕">
+      <created>1587845757561</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587845757561</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,32 +182,53 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="第一次提交" />
     <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+    <MESSAGE value="功能框架搭建完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="功能框架搭建完毕" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="751" y="188" key="CommitChangelistDialog2" timestamp="1587809567517">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587916514311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="751" y="188" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587809567517" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587838373226">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587916514311" />
+    <state x="751" y="188" key="CommitChangelistDialog2" timestamp="1587916694685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587838373226" />
+    <state x="751" y="188" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587916694685" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1587846562197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040@0.0.1920.1040" timestamp="1587846562197" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587912716635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587912716635" />
     <state x="769" y="416" key="Github.CreateGistDialog" timestamp="1587808252974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="416" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587808252974" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587809590169">
+    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1587899757426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587809590169" />
+    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1587899757426" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587845782387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587845782387" />
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587898788811">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="658" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587898788811" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587808486098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587808486098" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587845259748">
+    <state x="644" y="253" width="632" height="534" key="find.popup" timestamp="1587914673220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587845259748" />
+    <state x="644" y="253" width="632" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587914673220" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587914645661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587914645661" />
   </component>
 </project>
