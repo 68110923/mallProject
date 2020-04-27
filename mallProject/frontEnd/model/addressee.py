@@ -1,5 +1,5 @@
 from django.db import models
-from frontEnd.table.user import User
+from frontEnd.model.user import User
 
 
 class Addressee(models.Model):

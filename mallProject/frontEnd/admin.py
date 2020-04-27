@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-# Register your table here.
+# Register your model here.
 
 
 class commoditys:

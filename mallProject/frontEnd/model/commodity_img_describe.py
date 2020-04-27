@@ -1,7 +1,7 @@
 '''商品描述图片url，与商品多对一'''
 
 from django.db import models
-from frontEnd.table.commodity import Commodity
+from frontEnd.model.commodity import Commodity
 
 
 class CommodityImgDescribe(models.Model):

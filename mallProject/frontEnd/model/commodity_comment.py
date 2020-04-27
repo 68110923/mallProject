@@ -1,9 +1,9 @@
 '''订单评论，与商品多对一'''
 
 from django.db import models
-from frontEnd.table.commodity import Commodity
-from frontEnd.table.user import User
-from frontEnd.table.order import Order
+from frontEnd.model.commodity import Commodity
+from frontEnd.model.user import User
+from frontEnd.model.order import Order
 
 
 

@@ -1,6 +1,6 @@
 from django.db import models
-from frontEnd.table.user import User
-from frontEnd.table.commodity import Commodity
+from frontEnd.model.user import User
+from frontEnd.model.commodity import Commodity
 
 
 class ShoppingCar(models.Model):
