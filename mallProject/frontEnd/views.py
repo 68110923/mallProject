@@ -12,11 +12,14 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 
-from frontEnd.view import gets
-from frontEnd.view import configurAddressee
-from frontEnd.view import shoppingCarts
-from frontEnd.view import users
-from frontEnd.view import orders
+from frontEnd.view.users import userView
+
+
+
+from frontEnd.view.orders import orders
+from frontEnd.view.shoppingCarts import shoppingCarts
+from frontEnd.view.configurAddressee import configurAddressee
+from frontEnd.view.gets import gets
 
 
 

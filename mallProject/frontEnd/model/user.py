@@ -4,7 +4,7 @@ from rest_framework import serializers
 
 class User(models.Model):
     user_id = models.AutoField(primary_key=True,unique=True, verbose_name=u'用户id')
-    user_name = models.CharField(max_length=18, unique=True, verbose_name=u'用户名')
+    user_name = models.CharField(max_length=18, verbose_name=u'用户名')
     user_password = models.CharField(max_length=128, verbose_name=u'密码')
     user_pay_password = models.IntegerField(blank=True, null=True, verbose_name='支付密码')
     user_nickname = models.CharField(max_length=18, blank=True, null=True, verbose_name=u'用户昵称')
