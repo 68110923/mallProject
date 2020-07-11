@@ -12,3 +12,4 @@ class gets(View):
         })
     def post(self):
         return JsonResponse({})
+

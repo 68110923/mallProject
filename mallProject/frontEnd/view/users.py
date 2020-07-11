@@ -9,23 +9,11 @@ from django.views import View
 import functools
 
 
-
-def check_user(func):
-    @functools.wraps(func)
-    def inner(*args, **kwargs):
-        #判断是否登录
-        userid = args[0].session.get("login_user", "")
-        if userid == "":
-            #保存当前的url到session中
-            # args[0].session["path"] = args[0].path
-            #重定向到登录页面
-            return HttpResponseRedirect('/login/',kwargs={'msg':'您还未登录，请登录'})
-        return func(*args, **kwargs)
-    return inner
-
-@method_decorator(check_user,name='put')
-# @method_decorator(csrf_exempt,name='dispatch')  #cbv免除csrf
 class userView(View):
+    def get(self,request,*args,**kwargs):
+        # 查看用户资料
+        data = json.loads(serializers.serialize('json', User.objects.all()))
+        return JsonResponse(data, safe=False)
     def post(self,request,*args,**kwargs):
         # 注册
         user_name = request.POST['user_name']
@@ -45,12 +33,12 @@ class userView(View):
         obj = User.objects.filter(user_name=user_name)
         data = json.loads(serializers.serialize('json', obj))
         return JsonResponse(data, safe=False)
-    def get(self,request,*args,**kwargs):
+    @staticmethod
+    def login(request,*args,**kwargs):
         # 登录
         user_name = request.GET['username']
         user_password = request.GET['pwd']
         user = User.objects.filter(user_name=user_name)[0]
-
         if (user_name == user.user_name and user_password == user.user_password) or (user_name==user.user_tel and user_password==user.user_password):
             request.session["login_user"] = user.user_id
             return JsonResponse({'state': True, 'msg': json.loads(serializers.serialize('json',[user]))})

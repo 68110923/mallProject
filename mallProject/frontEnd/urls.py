@@ -11,7 +11,7 @@ router = routers.DefaultRouter()
 urlpatterns = [
     path('',views.gets.as_view(),name='getIndex'),
     path('user/',views.userView.as_view(),name='user'), # 注册，修改个人信息，注销用户
-    path('user/',views.userView.as_view(),name='user'), # 登录
+
 
 
 
